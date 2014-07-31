@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, html {width: 100%; height: 100%; font-family: 'Tahoma', sans-serif;}
+
+.console {width: 25%; height: 100%; float: left; cursor: text;}
+.console .cmd {width: 100%; height: 70%; background-color: #000; float: left; overflow: hidden;}
+.console .cmd p {color: #fff; font-size: 13px;}
+.console p {padding: 10px; float: left; box-sizing: border-box; margin: 0; width: 100%;}
+.console .commands h2 {margin: 5px 0 0 5px; font-weight: bold;}
+.console .commands p {font-size: 14px; line-height: 18px;}
+.console .cmd input {width: 100%; float: left; border: none; padding: 0 10px; box-sizing: border-box; background-color: #000; color: #fff;}
+
+.console .commands {width: 100%; height: 30%; background-color: #ddd; float: left;}
+
+.game {width: 75%; height: 100%; float: right; min-width: 800px; min-height: 600px; position: relative; background: url(../images/forest.png) repeat;}
+
+.game .knight {position: absolute; width: 60px; height: 60px; z-index: 2; background: url(../images/knight.png) center no-repeat;}
+
+.game .block {position: absolute; width: 60px; height: 60px; z-index: 1;}
+.game .vertical {background: url(../images/1.png);}
+.game .horizontal {background: url(../images/2.png);}
+.game .top-left {background: url(../images/3.png);}
+.game .top-right {background: url(../images/4.png);}
+.game .bot-left {background: url(../images/5.png);}
+.game .bot-right {background: url(../images/6.png);}
+.game .monster {background: url(../images/monster.png) center no-repeat;}
+.game .princess {background: url(../images/princess.png) center no-repeat;}
+.game .temple {background: url(../images/temple.png) center no-repeat;}
+
+
+.popup_mask {display: none; width: 100%; height: 100%; position: absolute; z-index: 3; background-color: rgba(0,0,0, .4); text-align: center;}
+.popup_mask .gameover {display: none; width: 100%; height: 100%; background: url(../images/game-over.png) center 10% no-repeat; padding-top: 15%; box-sizing: border-box;}
+.popup_mask p {width: 100%; color: #fff; font-size: 40px; text-align: center; font-weight: bold;}
+.popup_mask a {padding: 0 20px; height: 50px; background-color: red; display: inline-block; text-decoration: none; color: #fff; text-align: center; font-size: 25px; font-weight: bold; margin: 0 20px; line-height: 50px; text-transform: uppercase;}
+.popup_mask a:hover {color: #000;}
+
+.popup {padding-top: 15%; box-sizing: border-box; display: none;}
+.popup a.clear {display: none;}
